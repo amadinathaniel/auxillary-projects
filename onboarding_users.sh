@@ -3,14 +3,15 @@
 #
 # Copyright (c) 2022 Nathaniel Amadi
 #
-# This script will check if group exists and create one if it does not
+# This script will check if a developers group exists and create one if it does not
 # This script will read a CSV file that contains 20 new Linux users.
 # This script will create each user on the server and add to an existing group called 'Developers'.
-# This script will first check for the existence of the user on the system, before it will attempt to create that it.
+# This script will first check for the existence of the user on the system, before it will attempt to create it.
 # The user that is being created also must also have a default home folder
 # Each user should have a .ssh folder within its HOME folder. If it does not exist, then it will be created.
 # For each user’s SSH configuration, We will create an authorized_keys file and add the below public key.
 
+# Declare the variables
 userfile=$(cat names.csv)
 PASSWORD=password
 groupname=developers
